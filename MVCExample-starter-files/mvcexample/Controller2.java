@@ -21,7 +21,7 @@ public class Controller2 extends JFrame
     String modelName;
  
     // Constructor
-    public Controller2(Model model,String modelName) {
+    public Controller2(Model model,String modelName, int locY) {
     
         // Record reference to the model
         this.model = model;
@@ -29,7 +29,7 @@ public class Controller2 extends JFrame
         
         // Configure the window
         setTitle(modelName);
-        setLocation(40,200);
+        setLocation(40,200+(locY*150));
         setSize(350,150);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         Container window = getContentPane();
