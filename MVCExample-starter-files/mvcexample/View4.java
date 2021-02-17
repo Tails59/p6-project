@@ -9,7 +9,7 @@ import java.util.*;  // For Observer
 import java.awt.*;
 import javax.swing.*;
 
-public class View4 extends JPanel {
+public class View4 extends JPanel implements Obverver{
   
     private Model model;
     private Controller2 contr;   // Parent Frame
