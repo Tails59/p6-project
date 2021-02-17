@@ -22,7 +22,7 @@ public class Controller1 extends JFrame
     private JButton clearViews;  // For direct message to views
     private JButton incA;        // To prompt the model to "modify" itself (A component)
     private JButton quit;        // As it says
-    String modelName
+    String modelName;            //name of the controller
     
     // Constructor
     public Controller1(Model model,String modelName) {
