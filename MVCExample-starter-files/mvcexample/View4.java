@@ -29,15 +29,17 @@ public class View4 extends JPanel {
         display = new JTextField("No data", 15);
         add(display);
       
+        model.addObserver(this);
+      
     } // constructor
     
-    // Called by controller to refresh the view:
-    public void update() {
+    // Notified by the model when it is altered:
+    public void update(Observable o, Object arg) {
         
         // Fetch (potentially) updated information and display it
         int b = model.getDataB();
         display.setText("Model data B: " + b);
-      
+        
     } // update
     
     // Called by the controller to clear the view:
