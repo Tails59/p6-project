@@ -18,7 +18,7 @@ public class Controller2 extends JFrame
     private View4 view4;
     private JButton clearViews;   // For direct message to views
     private JButton refreshViews; // To prompt them to refresh their contents from the model
-    String modelName;
+    String modelName;             //name of the controller
  
     // Constructor
     public Controller2(Model model,String modelName) {
